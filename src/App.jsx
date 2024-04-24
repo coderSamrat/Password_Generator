@@ -15,7 +15,7 @@ function App() {
 
             if (numberAllow) char = char + '0123456789';
             if (charecterAllow)  char = char + '!@#$%^&*()_-;?,~++{}[]<>';
-            if (numberAllow || charecterAllow) char = char + '0123456789' + '!@#$%^&*()_-;?,~++{}[]<>';
+            if (numberAllow && charecterAllow) char = char + '0123456789' + '!@#$%^&*()_-;?,~++{}[]<>';
 
             for (let i = 1; i <= length; i++) {
                   let str = Math.floor(Math.random() * char.length + 1);
